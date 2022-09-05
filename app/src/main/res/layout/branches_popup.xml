@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:background="#FFFFFF"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView android:layout_width="18dp"
+        android:layout_height="16sp"
+        android:id="@+id/icon"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/back_copy"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/icon"
+        android:textColor="#7b7b7b"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/enter_location"
+        android:layout_marginTop="23dp"
+        android:text="@string/enterLocation"
+        android:layout_marginStart="10dp"
+        />
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"
+        android:layout_marginTop="30dp"
+        android:id="@+id/sep"
+        android:layout_below="@+id/icon"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/sep"
+        android:id="@+id/card2"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+
+        >
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+    <ImageView android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/icon2"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+
+        android:src="@drawable/marker"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/icon2"
+        android:textColor="#7b7b7b"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="start"
+        android:id="@+id/current_location"
+        android:layout_marginTop="23dp"
+        android:text="@string/current_location"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#7b7b7b"
+        android:textSize="15sp"
+        android:layout_toEndOf="@+id/icon2"
+
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/current_location"
+        android:id="@+id/gps"
+        android:layout_marginTop="7dp"
+        android:text="@string/gps"
+        android:layout_marginStart="10dp"
+        />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card2"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        />
+
+
+
+</RelativeLayout>

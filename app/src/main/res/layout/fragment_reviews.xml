@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_marginTop="80dp"
+    android:background="@drawable/back_ground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+        <RatingBar
+            android:id="@+id/add_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:progressTint="@color/gold"
+            android:isIndicator="false"
+            android:paddingTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addcomment"
+            android:textStyle="bold"
+            android:layout_below="@+id/add_rate"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:id="@+id/title1"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_reviews"
+            android:scrollbarThumbVertical="@null"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/title1"
+            android:layout_marginTop="10dp"
+
+            android:layout_above="@+id/title2"
+            android:layout_height="match_parent"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:id="@+id/title2"
+            android:layout_above="@+id/add_comment"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/write"/>
+
+
+        <EditText
+            android:id="@+id/add_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:lines="2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_frame15"
+            android:layout_above="@+id/rate"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:gravity="start"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/rate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/send"
+            android:textStyle="normal"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            android:background="@drawable/rounded_3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

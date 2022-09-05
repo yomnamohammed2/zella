@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "123961037590",
+    "project_id": "zella-32452",
+    "storage_bucket": "zella-32452.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123961037590:android:88dd93be4100828fe47637",
+        "android_client_info": {
+          "package_name": "com.emcan.zella"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123961037590-ifnalcpsp269uacg9rm6ja5bg1jat4aq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM7CUc3MY4l14MhvglPr_-r-Ewor03PLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123961037590-ifnalcpsp269uacg9rm6ja5bg1jat4aq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "123961037590-5a284v3ufdn5vddcacrg79793a31sm68.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.emcan.Zella"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

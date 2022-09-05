@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="80dp"
+    android:background="@drawable/back_ground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabDots"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tabGravity="fill"
+        android:layoutDirection="ltr"
+        app:tabMode="fixed"
+        android:layout_centerHorizontal="true"
+        app:tabIndicatorHeight="0dp"
+        android:background="#00FFFFFF"
+        android:layout_margin="10dp"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabTextColor="@color/colorPrimaryDark"
+        app:tabMaxWidth="0dp"
+        app:tabBackground="@drawable/tab_color_selector"
+
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tabDots"
+        >
+
+    </androidx.viewpager.widget.ViewPager>
+</RelativeLayout>
+
+</RelativeLayout>

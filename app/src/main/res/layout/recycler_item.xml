@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/line_seperator">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_frame15"
+        android:layout_margin="10dp"
+        android:id="@+id/card2"
+        >
+        <com.emcan.zella.Rounded_image_corners
+            android:id="@+id/dish_image"
+            android:layout_width="150dp"
+            android:layout_margin="2dp"
+            android:scaleType="centerCrop"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dish_name"
+        android:layout_toEndOf="@+id/card2"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="15dp"
+        />
+    <TextView android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/card2"
+        android:id="@+id/dish_details"
+        android:layout_below="@+id/dish_name"
+        android:text=""
+        android:layout_marginStart="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"
+        />
+    <TextView android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/card2"
+        android:id="@+id/price"
+        android:layout_below="@+id/dish_details"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:textSize="14sp"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerCrop"
+        android:padding="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/heart"
+        android:id="@+id/love"
+        />
+
+
+</RelativeLayout>

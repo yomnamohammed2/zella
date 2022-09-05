@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.emcan.zella.Rounded_image_corners
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/image"
+        android:src="@color/colorPrimary"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/close"
+        android:src="@drawable/close"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="-5dp"
+        android:layout_alignStart="@+id/image"/>
+
+</RelativeLayout>

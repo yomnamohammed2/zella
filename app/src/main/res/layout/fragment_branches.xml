@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/hh"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="150dp"
+
+        >
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="25dp"
+
+            android:layout_margin="2dp"
+            card_view:cardBackgroundColor="@android:color/transparent"
+            card_view:cardElevation="0dp"
+            card_view:contentPadding="0dp">
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mm"
+                android:background="@drawable/back_ground"
+
+
+                >
+
+
+
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/txt"
+        android:textSize="16dp"
+        android:text="@string/select_branch"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_branches"
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt"
+        android:layout_marginBottom="60dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp">
+
+    <Button android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/continu"
+        android:text="@string/confirm"
+        android:background="@drawable/rounded_3"
+        android:textColor="#ffffff"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAllCaps="false"
+        />
+        <Button android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/map"
+            android:text="@string/map"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button2"
+            android:textColor="#ffffff"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</RelativeLayout>

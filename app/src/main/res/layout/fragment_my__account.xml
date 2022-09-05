@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/back_ground"
+    android:layout_marginTop="80dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout  android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="80dp"
+    >
+
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/logo"
+        />
+
+    <RelativeLayout android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/rounded_frame15"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/card1"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        >
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="center"
+
+            >
+            <ImageView android:id="@+id/back1"
+                android:layout_width="18dp"
+                android:layout_alignParentEnd="true"
+
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back_red"
+                />
+
+            <TextView  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textSize="16dp"
+                android:text="@string/editacc"
+                android:layout_centerVertical="true"
+
+                android:layout_alignParentStart="true"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="20dp"
+                android:id="@+id/txt1"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/rounded_frame15"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/card2"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        >
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="center"
+
+            >
+
+            <ImageView android:id="@+id/back2"
+                android:layout_width="18dp"
+                android:layout_alignParentEnd="true"
+
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back_red"
+                />
+            <TextView  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textSize="16dp"
+                android:text="@string/addresses"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="20dp"
+
+                android:id="@+id/txt2"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/rounded_frame15"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/card3"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        >
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="center"
+
+            >
+            <ImageView android:id="@+id/back3"
+                android:layout_width="18dp"
+                android:layout_alignParentEnd="true"
+
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back_red"
+                />
+
+            <TextView  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textSize="16dp"
+                android:text="@string/delte_account"
+                android:layout_centerVertical="true"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="20dp"
+
+                android:id="@+id/txt3"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
+</ScrollView>

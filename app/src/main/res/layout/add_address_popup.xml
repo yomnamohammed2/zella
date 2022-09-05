@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/hh"
+    android:layout_marginBottom="50dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginTop="50dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="25dp"
+
+            android:layout_margin="2dp"
+            card_view:cardBackgroundColor="@android:color/transparent"
+            card_view:cardElevation="0dp"
+            card_view:contentPadding="0dp">
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mm"
+                android:background="@drawable/back_ground"
+
+                >
+            <ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+                android:id="@+id/scrollview"
+    >
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <com.emcan.zella.CustomMapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mo"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/t1"
+            />
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextborder2"
+            android:id="@+id/phone"
+            android:inputType="phone"
+            android:gravity="start"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+
+            android:layout_marginTop="5dp"
+            />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/t2"
+            />
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/region_spinner"
+            android:background="@drawable/edittextborder2">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColorHighlight="#00ffffff"
+                android:textSize="16dp"
+                android:gravity="start"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="0dp"
+                android:inputType="text|textNoSuggestions"
+                android:maxLines="1"
+                android:completionThreshold="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:id="@+id/region"
+                android:textColor="#FFFFFF"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:popupElevation="4dp"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:popupBackground="@android:color/white"
+                android:textColorHint="#FFFFFF"
+                android:backgroundTint="@android:color/transparent"
+                android:background="#ffffff"
+
+                />
+            <ImageView android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/arrow1"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/region_recycler"
+            android:visibility="gone"
+            android:elevation="4dp"
+            />
+
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blo"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:id="@+id/t3"
+            />
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextborder2"
+            android:id="@+id/block"
+            android:gravity="start"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+
+            android:textColorHint="#FFFFFF"
+            android:layout_marginTop="5dp"
+            />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/roa"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/t4"
+            />
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextborder2"
+            android:id="@+id/road"
+            android:gravity="start"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+
+            android:textColorHint="#FFFFFF"
+            android:layout_marginTop="5dp"
+            />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flattt"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/t5"
+            android:textColor="#FFFFFF"
+            />
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextborder2"
+            android:id="@+id/building"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+
+            android:textColorHint="#FFFFFF"
+            android:gravity="start"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flatoptional"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/t6"
+            />
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextborder2"
+            android:id="@+id/apartment"
+            android:inputType="number"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+
+            android:gravity="start"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notess"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/t7"
+            />
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextborder2"
+            android:id="@+id/note"
+            android:lines="5"
+            android:inputType="text"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:gravity="start"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            />
+        <Button
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:id="@+id/confirm_address"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="150dp"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_3"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="@string/confirmadd"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+</ScrollView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
+</RelativeLayout>

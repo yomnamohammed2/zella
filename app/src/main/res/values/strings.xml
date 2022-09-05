@@ -1,0 +1,376 @@
+<resources>
+    <string name="app_name">Zella</string>
+    <string name="app_nam">Zella Restaurant</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_sign_up_">Sign_up_Activity</string>
+    <string name="spinner">Choose Address</string>
+    <string name="mapboxtoken">pk.eyJ1IjoieW91bW5hIiwiYSI6ImNqaGlvcXhnZDBjNmYzY25wZjJiOWplM2UifQ.zyGzcy3B01o5YCfpqB9JzA</string>
+    <string name="lang">Please choose the language of your app..</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="receive_sms">You will recieve WhatsApp message within 3 min </string>
+
+    <string name="deliver_order">Deliver Order</string>
+
+    <string name="points">Points</string>
+
+    <string name="search">Search </string>
+    <string name="delte_account"> Delete Account </string>
+    <string name="delete_account_"> Are you sure you want to delete your account ? </string>
+
+    <string name="track_order">Track Order </string>
+    <string name="sub_total">Subtotal: </string>
+
+    <string name="select_branch">Select from our branches</string>
+    <string name="branches"> Branches</string>
+
+    <string name="pickup">PICKUP</string>
+    <string name="pickupfrom">PICKUP FROM:</string>
+    <string name="enterLocation">Please enter a location</string>
+    <string name="logintocontinue">Login to continue</string>
+    <string name="current_location">Current Location</string>
+    <string name="gps">Using GPS</string>
+    <string name="messages">Messages</string>
+    <string name="needtologin">You need to login to access this section of the app</string>
+
+    <string name="guest">Continue as a guest</string>
+    <string name="haveaccount">Have Account ?</string>
+    <string name="complteaccount"> Complete Profile </string>
+
+    <string name="identicalpassword"> Please insert identical password </string>
+
+    <string name="select_branch_">Please select from our branches</string>
+
+    <string name="select_delivery_">Please select delivery way</string>
+
+    <string name="description"> Description</string>
+    <string name="add_address"> Add Address </string>
+
+    <string name="select_address"> Select your address </string>
+    <string name="no_address"> Sorry you don\'t have address ,\n please Add new address</string>
+
+    <string name="sandwith1">First Sandwich</string>
+    <string name="sandwith2">Second Sandwich</string>
+    <string name="sandwith3">Third Sandwich</string>
+    <string name="sandwith4">Fourth Sandwich</string>
+    <string name="choose1">Choose 1</string>
+
+    <string name="notavailable">This order is not available now</string>
+    <string name="minimum_order">Minmum order limit is </string>
+
+    <string name="select_meal_sandwiches">Please choose your 4 Sandwiches </string>
+
+    <string name="sandwithes">Sandwiches :</string>
+
+
+    <string name="optional">(Required)</string>
+    <string name="potatos">Your choice of potatos</string>
+    <string name="drinks">Your choice of drinks</string>
+
+    <string name="myacc">My Account</string>
+    <string name="myorders">My Orders</string>
+    <string name="inbox">Inbox</string>
+    <string name="notifications">Notifications</string>
+    <string name="networkerror">Check your network connection</string>
+    <string name="menu">Menu</string>
+    <string name="main">Home</string>
+    <string name="favourite">Favourites</string>
+    <string name="cart">Cart</string>
+    <string name="aboutrestaourant"> About Us</string>
+    <string name="callus">Contact us</string>
+    <string name="complains">Complaints </string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="latest">Latest</string>
+    <string name="offers">Offers</string>
+
+    <string name="changelang">Change language</string>
+    <string name="closeapp">Closing App</string>
+    <string name="wantcloseapp">Do you want to close the app ?</string>
+    <string name="mobile">Phone Number</string>
+    <string name="pleaseenterphone">*Please enter your phone number</string>
+    <string name="sendpasscode">Send Password</string>
+    <string name="welcome">Welcome to Zella</string>
+    <string name="validphone">*Please enter a valid phone number</string>
+    <string name="password">Password</string>
+    <string name="pass">*Please enter your password</string>
+    <string name="remember">Remember me</string>
+    <string name="enter">Enter</string>
+    <string name="forget">Forget Password?</string>
+    <string name="developed">Developed by</string>
+    <string name="emcan">Emcan</string>
+    <string name="name">Name</string>
+    <string name="entername">*Please enter your name</string>
+    <string name="enterphone">*Please enter your phone number</string>
+    <string name="sign">Signup</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="unit">Unit</string>
+    <string name="quantity">Quantity</string>
+    <string name="price">Price</string>
+    <string name="addition">Additions </string>
+    <string name="addcomment">Give a comment about our food</string>
+    <string name="write">Write your comment</string>
+    <string name="sendcomment">Send </string>
+    <string name="choosedeliveryway">Please choose delivery way</string>
+    <string name="alert_code">   Please enter valid code</string>
+
+    <string name="verify">Verifying phone number</string>
+    <string name="not_receive">If you didn’t get code tap on resend</string>
+
+    <string name="tohome">Delivery</string>
+    <string name="fromrest">Take Away</string>
+    <string name="inrest">In Restaurant</string>
+    <string name="noadd">No addresses available</string>
+    <string name="confirmadd">Confirm Address</string>
+    <string name="addd">Add Address</string>
+    <string name="nocomplaints">You don\'t have any complaints</string>
+    <string name="allow_location">Your GPS is closed ,do you want to open? </string>
+    <string name="out">You location is out of Bahrain ,unfortunately you can\'t create account</string>
+    <string name="spicy">Spicy</string>
+    <string name="orignal">Original</string>
+
+    allow_location
+    <string name="noreply">New reply... </string>
+    <string name="send">Send</string>
+    <string name="total">Total:</string>
+    <string name="deliveryadd">Delivery Address:</string>
+    <string name="region">Region:</string>
+    <string name="block">Block:</string>
+    <string name="road">Road:</string>
+    <string name="flat">Building:</string>
+    <string name="flatt">Flat:</string>
+    <string name="deliveryinstructions">Delivery Notes:</string>
+    <string name="confirmorder">Confirm Order</string>
+    <string name="online">Online Payment</string>
+    <string name="cash">Cash Payment</string>
+    <string name="noorders">You don\'t have current orders</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+    <string name="without">Without</string>
+    <string name="anothernote">Another Note</string>
+    <string name="addnote">Add a note</string>
+    <string name="addtoorder">Add to my orders</string>
+    <string name="reviews">Reviews :</string>
+    <string name="show">Show All</string>
+    <string name="rate">Add a Review</string>
+    <string name="upgrade">You need to upgrade your App Version</string>
+    <string name="features">Some features will not work properly</string>
+    <string name="updatenow">Update Now</string>
+    <string name="later">Later</string>
+    <string name="more">More</string>
+    <string name="changename">Edit name</string>
+    <string name="changepassword">Edit password</string>
+    <string name="confirmpassword">Confirm password</string>
+    <string name="changeemail">Edit email address</string>
+    <string name="changenum">Edit phone number</string>
+    <string name="edit">Edit</string>
+    <string name="mo">Phone Number (*)</string>
+    <string name="reg">Region (*)</string>
+    <string name="blo">Block (*)</string>
+    <string name="roa">Road (*)</string>
+    <string name="flattt">Home/Building (*)</string>
+    <string name="flatoptional">Flat/Office (Optional)</string>
+    <string name="notess">Delivery notes (Optional)</string>
+    <string name="nolastorders">You don\'t have previous orders</string>
+    <string name="noinbox">You don\'t have incoming messages</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email Address</string>
+    <string name="addresses">Addresses</string>
+    <string name="editdata">Edit Data</string>
+    <string name="nofavs">Your favourites is empty</string>
+    <string name="nocart">Hey , your basket is empty ! </string>
+    <string name="nocart_">Go on stock up and order your faves </string>
+    <string name="add_items">Add items </string>
+    <string name="totall">Total :</string>
+    <string name="discount">Discount :</string>
+    <string name="priceafterdisc">Total after discount :</string>
+    <string name="confirm">Confirm</string>
+    <string name="nonotification">You don\'t have any notifications</string>
+    <string name="title">Title</string>
+    <string name="message">Message</string>
+    <string name="opinion">Write your opinion here...</string>
+    <string name="addimage">+ Add Photos</string>
+    <string name="orderdate">Order Date</string>
+    <string name="orderno">Order No.</string>
+    <string name="ready">Preparing</string>
+    <string name="del">On The Way</string>
+    <string name="delivery">Delivered</string>
+
+
+    <string name="reorder">Reorder</string>
+    <string name="follow">Follow Order</string>
+    <string name="cancel">Cancel Order</string>
+    <string name="canceled">Order cancelled by Restaurant</string>
+    <string name="ok">Ok</string>
+    <string name="count">Count</string>
+    <string name="adddition">Additions:</string>
+    <string name="withoutt">Without:</string>
+    <string name="pepsii">Pepsi:</string>
+    <string name="potatoo">Fries:</string>
+
+    <string name="cheese">Cheese</string>
+    <string name="skip">Skip</string>
+    <string name="emailaddress">Email Address</string>
+    <string name="pas">Password</string>
+    <string name="errortryagain">Error try again</string>
+    <string name="sent">Password has been sent to your email address</string>
+    <string name="unsuccess">Unsuccessful transaction, Money has not been deducted</string>
+    <string name="success">Order confirmed successfully</string>
+    <string name="resuccess">Order has been resent successfully</string>
+    <string name="accountadded">Your account has been created successfully</string>
+    <string name="deleteadd">Are you sure you want to delete that address?</string>
+    <string name="deletedadd">Address deleted</string>
+    <string name="surecartdelete">Are you sure you want to delete that dish from cart?</string>
+    <string name="deletedfromcart">Dish deleted from cart</string>
+    <string name="deletefromfav">Are you sure you want to delete this dish from favourites?</string>
+    <string name="deletedfromfav">Dish deleted from favourites</string>
+    <string name="last">Previous</string>
+    <string name="current">Current</string>
+    <string name="addtofav">Dish added successfully to favourites</string>
+    <string name="signfirst">You have to Signup first</string>
+    <string name="deletecomment">Are you sure you want to delete this comment?</string>
+    <string name="commdeleted">Comment deleted successfully</string>
+    <string name="addrate">Add Comment</string>
+    <string name="editrate">Edit comment</string>
+    <string name="addre">Please write your comment</string>
+    <string name="addr">Please choose your rating</string>
+    <string name="commedited">Comment edited successfully</string>
+    <string name="commadded">Comment added successfully</string>
+    <string name="chooseadd">Choose Address</string>
+    <string name="choose">Please choose delivery address</string>
+    <string name="addaddress">No addresses available, Please add your address</string>
+    <string name="msgsent">Message sent</string>
+    <string name="charge">A charge will be added with </string>
+    <string name="bah">Bahraini dinar for </string>
+    <string name="agree">Do you agree? </string>
+    <string name="orderconfirmed">Order confirmed successfully</string>
+    <string name="signinfirst">You have to Login first</string>
+    <string name="nocomment">No comments.. Add your comment</string>
+    <string name="noreviews">No reviews</string>
+    <string name="toaddcomm">You have to Login to add a comment</string>
+    <string name="addedtocart">Dish added to cart successfully</string>
+    <string name="ll">Please choose the size</string>
+    <string name="editacc">Edit Account</string>
+
+    <string name="youtube">Youtube</string>
+
+    <string name="snapchat">Snapchat</string>
+
+
+    <string name="dataedit">Your data has been edited successfully</string>
+    <string name="samepass">Please enter identical passwords</string>
+    <string name="detailadd">Address Details</string>
+    <string name="enterregion">Please choose your region</string>
+    <string name="reordered">Order has been resent successfully</string>
+    <string name="cantorder">We can\'t receive your order now</string>
+    <string name="choosepayment">Choose Payment</string>
+    <string name="chooseaddress">Choose delivery address</string>
+    <string name="pleaseadd">Please choose your address</string>
+    <string name="myflat">Flat:</string>
+    <string name="chooseyou">Choose your address</string>
+    <string name="emptycart">Cart is empty</string>
+    <string name="reviewss">Reviews</string>
+    <string name="staff">Staff</string>
+    <string name="completedata">please complete your information</string>
+    <string name="add5image">Please add a maximum of 5 photos</string>
+    <string name="thanks">Thank you .. We will communicate with you later ..</string>
+    <string name="select_meal_addition">Please select potato and drink size</string>
+    <string name="agree_terms">  By continue order you agree to Online Payment </string>
+    <string name="terms"> Terms and Conditions </string>
+
+    <string name="continu"> Continue </string>
+    <string name="cancel_"> Cancel </string>
+    <string name="technical">Technical Support</string>
+    <string name="pricee">Price</string>
+    <string name="enteryournumber">Enter your phone number</string>
+    <string name="newpassword">Confirm Password</string>
+    <string name="passwordd">New Password</string>
+    <string name="restore">Restore Password</string>
+    <string name="save">Save</string>
+    <string name="nooffers">You don\'t have any offers</string>
+    <string name="surecartempty">Are you sure you want to empty cart ?</string>
+    <string name="benefit">Benedit Card  </string>
+    <string name="credit">Credit Card  </string>
+    <string name="discountt">Discount</string>
+    <string name="netprice">Net Price :</string>
+    <string name="vat">VAT</string>
+    <string name="sections">Sections</string>
+    <string name="restaurants">Branches</string>
+    <string name="km">Km</string>
+    <string name="map">Map</string>
+    <string name="select_country">Select your country</string>
+    <string name="bahrain">Bahrain</string>
+    <string name="saudi">Saudi Arabia</string>
+    <string name="powered_by">Powered By</string>
+    <string name="ryal">Saudi Riyal for</string>
+    <string name="postal_code">Postal Code (Optional)</string>
+    <string name="additional_code">Additional Code (Optional)</string>
+    <string name="city">City (*)</string>
+    <string name="district">District (*)</string>
+    <string name="street">Street  (*)</string>
+    <string name="building_number">Building Number (*)</string>
+    <string name="unit_number">Unit Number (Optional)</string>
+    <string name="postal_codee">Postal Code:</string>
+    <string name="additional_codee">Addtional Code:</string>
+    <string name="cityy">City:</string>
+    <string name="districtt">District:</string>
+    <string name="streett">Street:</string>
+    <string name="building_numberr">Building number:</string>
+    <string name="unit_numberr">Unit number:</string>
+    <string name="driver">Driver</string>
+    <string name="hello">Hello</string>
+    <string name="charge_delivery">Delivery Charge:</string>
+    <string name="accept_order">Accept Order</string>
+    <string name="order_num">Order Num:</string>
+    <string name="bhd">BD</string>
+
+    <string name="addtobasket">Add To Cart</string>
+    <string name="viewbasket">View Cart</string>
+    <string name="items">ITEM</string>
+
+    <string name="checkout">Check out</string>
+    <string name="facebook"> Facebook</string>
+    <string name="twitter"> Twitter</string>
+    <string name="instagram"> Instagram</string>
+    <string name="payment_type">Payment Type:</string>
+    <string name="loyalty_points">Loyalty Points</string>
+    <string name="accepted">Accepted</string>
+    <string name="show_drvier_location">Show Driver Location</string>
+    <string name="delivered">Delivered</string>
+    <string name="arrived">Arrived</string>
+    <string name="updated_successfully">Updated Successfully</string>
+    <string name="order_delivered">Order Delivered</string>
+    <string name="pleaseaddcopoun">Please add your discount code</string>
+    <string name="discount_code">Discount Code</string>
+    <string name="apply">Apply</string>
+    <string name="delivery_charge">Delivery Cost:</string>
+    <string name="refresh">Refresh</string>
+    <string name="want_logout">Do you want to logout ?</string>
+    <string name="pp">If the code is not received, please contact WhatsApp on the following number 0097333405497</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="confirm_cart">Confirm Cart</string>
+    <string name="lates">Latest</string>
+    <string name="mostSelling">Chef Day Special</string>
+    <string name="addtocart">Add To Cart</string>
+    <string name="cats">Categories</string>
+    <string name="no_cats">No Categories Found</string>
+    <string name="no_branches">No Branches Found</string>
+
+    <string name="mapView">Map View</string>
+    <string name="listView">List View</string>
+    <string name="title_activity_complete_account">CompleteAccount</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

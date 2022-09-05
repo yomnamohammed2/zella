@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back_ground"
+    android:layout_height="match_parent"
+    android:layout_marginTop="80dp">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+
+        android:fillViewport="true">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message"
+            android:text="@string/noadd"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="120dp"
+            android:textSize="18sp"
+            android:visibility="gone"
+            />
+        <ImageView android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/no_address"
+            android:layout_centerHorizontal="true"
+           android:layout_below="@+id/message"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/no_address"
+            android:visibility="gone"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_cart"
+            android:scrollbarThumbVertical="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <Button
+                android:id="@+id/add"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="@string/addd"
+                android:background="@drawable/rounded_frame15"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_below="@+id/recycler_cart"
+                android:layout_gravity="top"
+                android:textColor="#ffffff"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/continu"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_3"
+                android:text="@string/confirmadd"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_marginEnd="5dp"
+                android:layout_below="@+id/recycler_cart"
+                android:layout_gravity="top"
+                android:textColor="#ffffff"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

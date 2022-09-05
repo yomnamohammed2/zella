@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginTop="80dp"
+    android:background="@drawable/back_ground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="80dp"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:background="#00FFFFFF"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:layoutDirection="ltr"
+        app:tabIndicatorHeight="0dp"
+        android:layout_margin="10dp"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabTextColor="@color/colorPrimaryDark"
+        app:tabMaxWidth="0dp"
+        app:tabBackground="@drawable/tab_color_selector"
+
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tabDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground"
+    android:layout_width="match_parent">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ImageView android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:id="@+id/back"
+            android:layout_margin="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/back_copy"
+            android:visibility="gone"/>
+
+
+        <LinearLayout android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/back">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/message"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+
+                />
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/txt1"
+                android:layout_centerHorizontal="true"
+                android:textSize="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:text="@string/verify"/>
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/txt2"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/txt1"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+
+                android:layout_centerHorizontal="true"
+                android:textSize="14dp"
+                android:text="@string/receive_sms"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/back"/>
+
+
+            <RelativeLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/digits"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_below="@+id/txt2">
+
+
+                <RelativeLayout android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:id="@+id/rel1"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_frame15">
+
+
+                    <EditText android:layout_height="wrap_content"
+                        android:layout_width="30dp"
+                        android:id="@+id/digit1"
+                        android:textColor="#FFFFFF"
+                        android:padding="5dp"
+                        android:cursorVisible="false"
+                        android:imeOptions="actionNext"
+                        android:maxLength="1"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:backgroundTint="@android:color/transparent"
+                        android:layout_alignParentLeft="true">
+
+                        <requestFocus/>
+
+                    </EditText>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:id="@+id/rel2"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_frame15"
+                    android:layout_toRightOf="@+id/rel1">
+
+                    <EditText android:layout_height="wrap_content"
+                        android:layout_width="30dp"
+                        android:id="@+id/digit2"
+                        android:textColor="#FFFFFF"
+                        android:padding="5dp"
+                        android:cursorVisible="false"
+                        android:imeOptions="actionNext"
+                        android:maxLength="1"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:backgroundTint="@android:color/transparent"
+                        android:layout_alignParentLeft="true"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:id="@+id/rel3"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_frame15"
+                    android:layout_toRightOf="@+id/rel2">
+
+                    <EditText android:layout_height="wrap_content"
+                        android:layout_width="30dp"
+                        android:id="@+id/digit3"
+                        android:textColor="#FFFFFF"
+                        android:padding="5dp"
+                        android:cursorVisible="false"
+                        android:imeOptions="actionNext"
+                        android:maxLength="1"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:backgroundTint="@android:color/transparent"
+                        android:layout_alignParentLeft="true"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:id="@+id/rel4"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_frame15"
+                    android:layout_toRightOf="@+id/rel3">
+
+                    <EditText android:layout_height="wrap_content"
+                        android:layout_width="30dp"
+                        android:id="@+id/digit4"
+                        android:textColor="#FFFFFF"
+                        android:padding="5dp"
+                        android:cursorVisible="false"
+                        android:imeOptions="actionNext"
+                        android:maxLength="1"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:backgroundTint="@android:color/transparent"
+                        android:layout_alignParentLeft="true"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:id="@+id/rel5"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_frame15"
+                    android:layout_toRightOf="@+id/rel4">
+
+                    <EditText android:layout_height="wrap_content"
+                        android:layout_width="30dp"
+                        android:id="@+id/digit5"
+                        android:textColor="#FFFFFF"
+                        android:padding="5dp"
+                        android:cursorVisible="false"
+                        android:imeOptions="actionNext"
+                        android:maxLength="1"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:backgroundTint="@android:color/transparent"
+                        android:layout_alignParentLeft="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:id="@+id/rel6"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_frame15"
+                    android:layout_toRightOf="@+id/rel5">
+
+                    <EditText android:layout_height="wrap_content"
+                        android:layout_width="30dp"
+                        android:id="@+id/digit6"
+                        android:textColor="#FFFFFF"
+                        android:padding="5dp"
+                        android:cursorVisible="false"
+                        android:imeOptions="actionNext"
+                        android:maxLength="1"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:backgroundTint="@android:color/transparent"
+                        android:layout_alignParentLeft="true"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <Button android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/login"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/resend"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:text="@string/confirm"
+                android:background="@drawable/rounded_3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="60dp"
+                android:textAllCaps="false"
+                android:layout_marginStart="60dp"
+                />
+            <com.emcan.zella.TextViewWithFont
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/txt3"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/login"
+                android:layout_centerHorizontal="true"
+                android:lineSpacingExtra="5dp"
+                android:textSize="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="#FFFFFF"
+                android:text="@string/pp"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tx2"/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

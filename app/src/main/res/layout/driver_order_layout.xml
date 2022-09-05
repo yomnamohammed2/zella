@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/last_orders_back"
+        android:padding="2dp">
+
+        <ImageView android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/mainicon"
+            android:layout_margin="20dp"
+            android:id="@+id/image"
+            android:layout_centerVertical="true"
+            />
+        <TextView android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:visibility="gone"
+            android:textColor="#000000"
+            android:layout_toEndOf="@+id/image"
+            android:layout_centerVertical="true"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:id="@+id/name"/>
+
+        <LinearLayout android:layout_width="2dp"
+            android:layout_height="130dp"
+            android:layout_centerVertical="true"
+            android:background="@color/grey"
+            android:id="@+id/separator"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/name"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="25dp"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:id="@+id/date"
+            android:layout_toEndOf="@+id/separator"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/separator"
+            android:orientation="horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/l"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_below="@id/date">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:id="@+id/t"
+                />
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:id="@+id/total"
+                    />
+                <TextView  android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_below="@id/l"
+            android:id="@+id/order_id"
+            android:layout_toEndOf="@+id/separator"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/separator"
+            android:layout_below="@id/order_id"
+            android:id="@+id/lin">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="gone">
+                <com.emcan.zella.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/totall"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp">
+                </com.emcan.zella.TextViewWithFont>
+                <com.emcan.zella.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtview_subtotal"
+                    android:textSize="13sp"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp">
+                </com.emcan.zella.TextViewWithFont>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp">
+                <com.emcan.zella.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txt_discount_percentage">
+                </com.emcan.zella.TextViewWithFont>
+                <com.emcan.zella.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtview_discount"
+                    android:textSize="12sp"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="10dp">
+                </com.emcan.zella.TextViewWithFont>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/vat_lin"
+                android:visibility="gone">
+                <com.emcan.zella.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtview_vatpercentage">
+                </com.emcan.zella.TextViewWithFont>
+                <com.emcan.zella.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtview_vat"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp">
+                </com.emcan.zella.TextViewWithFont>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/lin_charge"
+                android:visibility="gone">
+                <com.emcan.zella.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="@string/charge_delivery"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp">
+                </com.emcan.zella.TextViewWithFont>
+                <com.emcan.zella.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtview_charge"
+                    android:textSize="13sp"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp">
+                </com.emcan.zella.TextViewWithFont>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp">
+                <com.emcan.zella.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="@string/payment_type"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp">
+                </com.emcan.zella.TextViewWithFont>
+                <com.emcan.zella.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtview_payment"
+                    android:textSize="13sp"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp">
+                </com.emcan.zella.TextViewWithFont>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp">
+                <com.emcan.zella.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="@string/netprice"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp">
+                </com.emcan.zella.TextViewWithFont>
+                <com.emcan.zella.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtview_total"
+                    android:textSize="13sp"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                </com.emcan.zella.TextViewWithFont>
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/track"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:background="@drawable/rounded_button2"
+            android:text="@string/accept_order"
+            android:padding="7dp"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:layout_toEndOf="@id/separator"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/lin"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"/>
+        <LinearLayout android:layout_width="2dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/line_separetor_order1"
+            android:id="@+id/separator2"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/l"
+            android:layout_marginStart="5dp"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/order"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_toEndOf="@+id/separator2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/check" />
+
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/follow"
+                android:textColor="@color/green"
+                android:layout_gravity="center"
+                android:layout_below="@+id/check"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                android:id="@+id/reorder"
+                />
+            <ImageView  android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"
+                android:id="@+id/delete"/>
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/callus"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_below="@+id/delete"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                android:visibility="invisible"
+                android:id="@+id/cancel"/>
+
+            <ImageView  android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/check_gray"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/cancelled"/>
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/cancel_"
+                android:textColor="#808080"
+                android:layout_below="@+id/cancelled"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible"
+                android:textSize="10dp"
+                android:id="@+id/cancelled2"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_last_order"
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        />
+</LinearLayout>

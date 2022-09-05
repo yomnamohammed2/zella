@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back_ground"
+    android:layout_height="match_parent"
+    android:layout_marginTop="75dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:paddingBottom="80dp"
+        android:layout_height="match_parent"
+        >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+>
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderCircularHandlerEnabled="true"
+        android:visibility="gone"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="1.5dp"
+        app:sliderIndicatorSelectedColor="@color/colorAccent"
+        app:sliderIndicatorUnselectedColor="#FFFFFF"
+        app:sliderScrollTimeInSec="3"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        android:nestedScrollingEnabled="true"
+        app:sliderStartAutoCycle="true" />
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:background="#88089000"
+        android:layout_below="@+id/slider"
+        android:id="@+id/sections_rel">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_sections"
+            android:scrollbarThumbVertical="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="7dp"
+        android:id="@+id/latest_rel">
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/latest_txt"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/latest"
+                android:textSize="17sp"
+                />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/latest"
+            android:scrollbarThumbVertical="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/most_selling_rel">
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/most_selling_txt"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/mostSelling"
+                android:textSize="17sp"
+                />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/most_selling"
+            android:scrollbarThumbVertical="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/offers_rel">
+
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/offers_txt"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/offers"
+            android:textSize="17sp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/offers"
+            android:scrollbarThumbVertical="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+</ScrollView>

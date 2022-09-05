@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="80dp"
+    android:background="#FFFFFF"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="87dp"
+        android:id="@+id/scrollview"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="60dp"
+            android:id="@+id/container"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+        </LinearLayout>
+    </ScrollView>
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:id="@+id/ss"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <RelativeLayout android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/rounded_etar_gray"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:gravity="start"
+                android:id="@+id/m">
+
+            <EditText android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="@string/noreply"
+                android:id="@+id/comment"
+                android:textColor="#7b7b7b"
+                android:gravity="start"
+                android:inputType="text"
+                android:textSize="16dp"
+
+                />
+            </RelativeLayout>
+            <Button android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_toEndOf="@+id/m"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="15dp"
+                android:layout_centerVertical="true"
+                android:text="@string/send"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:id="@+id/send"/>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="?android:attr/progressBarStyle"/>
+    </RelativeLayout>

@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground"
+    android:layout_marginTop="80dp">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:fillViewport="true">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_cart"
+            android:scrollbarThumbVertical="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/payment_rel"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:layout_below="@+id/line">
+
+            <RadioButton
+                android:id="@+id/cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFFFF"
+
+                android:buttonTint="@color/colorAccent"
+                android:layout_alignParentStart="true"
+                android:visibility="gone"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/cash"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="#FFFFFFFF"
+                android:id="@+id/cash_txt"/>
+
+            <ImageView android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:id="@+id/icon1"
+                android:layout_toEndOf="@+id/cash_txt"
+                android:src="@drawable/cash"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"/>
+
+            <RadioButton android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/debit"
+                android:layout_below="@+id/cash"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFFFF"
+
+                android:layout_alignParentStart="true"
+                android:buttonTint="@color/colorAccent"
+                android:visibility="gone"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/debit"
+                android:textSize="16dp"
+                android:layout_below="@+id/cash"
+                android:layout_marginTop="12dp"
+                android:textColor="#FFFFFFFF"
+
+                android:layout_marginStart="5dp"
+                android:id="@+id/debit_txt"/>
+
+            <ImageView android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/icon2"
+                android:layout_below="@+id/cash"
+                android:layout_toEndOf="@+id/debit_txt"
+                android:src="@drawable/benefit"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:visibility="gone"/>
+
+            <RadioButton android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/credit"
+                android:layout_below="@+id/debit"
+                android:buttonTint="@color/colorAccent"
+                android:textColor="#FFFFFFFF"
+
+                android:layout_marginTop="8dp"
+                android:layout_alignParentStart="true"
+                android:visibility="gone"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/debit"
+                android:textSize="16dp"
+                android:layout_below="@+id/debit"
+                android:layout_marginTop="12dp"
+                android:textColor="#FFFFFFFF"
+                android:layout_marginStart="5dp"
+                android:id="@+id/credit_txt"/>
+
+            <ImageView android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:id="@+id/icon3"
+                android:layout_below="@+id/debit"
+                android:layout_toEndOf="@+id/credit"
+                android:src="@drawable/master_card"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="17dp"
+                android:visibility="gone"/>
+
+            <ImageView android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:id="@+id/icon4"
+                android:layout_below="@+id/debit"
+                android:layout_toEndOf="@+id/icon3"
+                android:src="@drawable/visa"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="17dp"
+                android:visibility="gone"/>
+
+            <ImageView android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:id="@+id/icon5"
+                android:layout_below="@+id/debit"
+                android:layout_toEndOf="@+id/icon4"
+                android:src="@drawable/jcb"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="17dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recycler_cart"
+            android:id="@+id/disrel"
+            android:visibility="gone"
+            android:layout_marginTop="10dp">
+            <com.emcan.zella.TextViewWithFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:text="@string/discount_code"
+                android:textSize="15sp"
+                android:id="@+id/code"
+                android:layout_marginStart="30dp"></com.emcan.zella.TextViewWithFont>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/code"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="40dp"
+                    android:id="@+id/edit"
+                    android:textSize="15sp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginEnd="-4dp"
+                    android:background="@drawable/white_with_stroke"></EditText>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:id="@+id/apply"
+                    android:text="@string/apply"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:background="@drawable/rounded_button2"></Button>
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@id/disrel"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/line"></View>
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/payment_rel"
+            android:id="@+id/total_rel"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/rel1"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"
+                    android:text="@string/sub_total"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/txt"
+                    />
+
+                <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:layout_alignParentLeft="true"
+                        android:text=""
+                        android:id="@+id/total_txt"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:id="@+id/j"
+                        android:text="@string/bhd"
+                        android:layout_toRightOf="@id/total_txt"
+                        android:layout_alignBaseline="@id/total_txt"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel2"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:layout_below="@+id/rel1"
+                android:layout_marginBottom="5dp">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/discount"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/txt11"
+                    />
+
+                <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:layout_marginRight="10dp"
+                        android:text="0.0"
+                        android:id="@+id/total_"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:text="@string/bhd"
+                        android:id="@+id/jj"
+                        android:layout_toRightOf="@+id/total_"
+                        android:layout_alignBaseline="@id/total_"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel5"
+                android:padding="5dp"
+                android:layout_below="@+id/rel2"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/vat"
+                    android:textColor="#FFFFFF"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/vat"
+                    />
+
+                <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:layout_marginRight="10dp"
+                        android:text="0.0"
+                        android:id="@+id/vat_value"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:text="@string/bhd"
+                        android:id="@+id/jjj"
+                        android:layout_toRightOf="@+id/vat_value"
+                        android:layout_alignBaseline="@id/vat_value"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/grey"
+                android:layout_below="@+id/rel5"
+                android:id="@+id/sep"/>
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel4"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/sep"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/delivery_charge"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/txt222"
+                    android:textColor="#FFFFFF"
+                    />
+                <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_marginRight="10dp"
+                        android:text="0.0"
+                        android:id="@+id/charge"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="#FFFFFF"
+                        />
+
+                    <TextView
+                        android:id="@+id/chargee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/charge"
+                        android:textSize="15dp"
+                        android:text="@string/bhd"
+                        android:textColor="#FFFFFF"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel3"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/rel4"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+
+                    android:textSize="15dp"
+                    android:text="@string/netprice"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/txt22"
+                    />
+
+                <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+
+                        android:textSize="15dp"
+                        android:layout_marginRight="10dp"
+                        android:text="0.0"
+                        android:id="@+id/discount"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+
+                        android:textSize="15dp"
+                        android:text="@string/bhd"
+                        android:id="@+id/k"
+                        android:layout_toRightOf="@+id/discount"
+                        android:layout_alignBaseline="@id/discount" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt33"
+            android:text="@string/total"
+            android:visibility="gone"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/payment_rel"/>
+
+        <RelativeLayout android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txt33"
+            android:layout_marginStart="10dp"
+            android:gravity="start"
+            android:layout_below="@+id/payment_rel"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/total_price"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+
+                android:text=""
+                android:layout_marginTop="20dp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+
+                android:text="@string/bhd"
+                android:layout_toRightOf="@+id/total_price"
+                android:layout_marginTop="20dp"
+                android:id="@+id/coin"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_below="@+id/payment_rel"/>
+
+<RelativeLayout android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_toEndOf="@+id/txt33"
+    android:layout_marginStart="10dp"
+    android:gravity="start"
+    android:layout_below="@+id/payment_rel"
+    android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="10"
+            android:textColor="#FFFFFF"
+
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/bhd"
+            android:textColor="#FFFFFF"
+
+            android:id="@+id/kk"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/amaranth_bold"
+            android:layout_marginLeft="10dp" />
+
+</RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_rel"
+            android:gravity="start"
+            android:id="@+id/address"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:background="@drawable/rounded_frame15"
+            android:paddingStart="20dp"
+
+            >
+
+            <ImageView android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/icon"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/marker"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/icon"
+            android:text="@string/deliveryadd"
+            android:textColor="#FFFFFF"
+
+            android:id="@+id/title"></TextView>
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textColor="#FFFFFF"
+                android:layout_below="@+id/icon"
+                android:layout_margin="5dp"
+                android:id="@+id/region"/>
+
+
+
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/deliveryinstructions"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/region"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/txt6"
+                android:visibility="invisible"/>
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_toEndOf="@+id/txt6"
+                android:text="55"
+                android:layout_below="@+id/region"
+                android:layout_marginStart="5dp"
+                android:id="@+id/note"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+            <Button
+                android:id="@+id/continu"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/rounded_3"
+                android:text="@string/confirmorder"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/address"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textAllCaps="false"
+               />
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

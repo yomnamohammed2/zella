@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:background="@drawable/line_seperator"
+    >
+    <CheckBox android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/cb"
+        android:buttonTint="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/mainicon"
+        android:id="@+id/image"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:layout_toStartOf="@id/cb"
+        android:gravity="start"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/image"
+        android:textColor="#FFFFFF"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/text"
+        android:layout_toEndOf="@+id/image"
+
+        android:layout_marginStart="10dp"
+        android:visibility="gone"
+        android:textSize="15dp"
+        android:textColor="@color/blue"/>
+
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/distance"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/address"
+        android:cursorVisible="true"
+        android:layout_toEndOf="@+id/image"
+
+        android:layout_marginStart="10dp"
+        android:visibility="gone"
+        android:textSize="15dp"
+        android:textColor="@color/inactivedots"/>
+
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:cursorVisible="true"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:layout_below="@id/phone"
+        android:textColor="@color/inactivedots"
+        android:layout_alignStart="@id/text"/>
+</RelativeLayout>
